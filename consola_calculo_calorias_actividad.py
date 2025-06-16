@@ -12,11 +12,11 @@ try:
     peso = float(input("Peso (kg): "))
     altura = float(input("Altura (m): "))
     edad = int(input("Edad: "))
-    genero = int(input("Género: 1 masculino, 2 femenino: "))
+    genero = int(input("Gnero: 1 masculino, 2 femenino: "))
     actividad = int(input("Nivel actividad (1 a 5): "))
     valor_genero = 5 if genero == 1 else -161
     valor_actividad = niveles.get(actividad, 1.2)
     calorias = calc.calcular_calorias_en_actividad(peso, altura, edad, valor_genero, valor_actividad)
-    print("Calorías con actividad:", int(calorias))
+    print("Calorias con actividad:", int(calorias))
 except:
     print("Error al ingresar datos.")

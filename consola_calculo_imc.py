@@ -21,11 +21,11 @@ def categoria_imc(imc):
         return "Obesidad Tipo 4 "
 
 try:
-    peso = float(input("Ingresá tu peso en kg: "))
-    altura = float(input("Ingresá tu altura en metros: "))
+    peso = float(input("Ingresa tu peso en kg: "))
+    altura = float(input("Ingresad tu altura en metros:"))
     imc = calc.calcular_IMC(peso, altura)
     categoria = categoria_imc(imc)
     print("Tu IMC es:", round(imc, 2))
-    print("Categoría:", categoria)
+    print("Categoria:", categoria)
 except:
-    print("Error: ingresá números válidos.")
+    print("Error, ingresa numeros validos")

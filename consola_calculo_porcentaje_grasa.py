@@ -24,12 +24,12 @@ try:
     peso = float(input("Peso (kg): "))
     altura = float(input("Altura (m): "))
     edad = int(input("Edad: "))
-    genero = int(input("Género: 1 para masculino, 2 para femenino: "))
+    genero = int(input("Genero: 1 para masculino, 2 para femenino: "))
     valor_genero = 10.8 if genero == 1 else 0
     grasa = calc.calcular_porcentaje_grasa(peso, altura, edad, valor_genero)
     print("Grasa corporal:", round(grasa, 2), "%")
     print("Rango recomendado:", grasa_recomendada(edad, genero))
 except:
-    print("Error en los datos. Ingresá números.")
+    print("Error en los datos, Ingresa numeros")
 
 
